@@ -9,7 +9,7 @@
     --light-pink-color: #FF8FB0;
     --green-color: #004D40;
     --blue-color: #4DB6AC;
-    --gray-color: #dadada;
+    --gray-color: #e0e0e0;
     --font-color: #212121;
     --background-color: #FFFFFF;
     --title-font: "Quicksand",sans-serif;
@@ -24,39 +24,51 @@ ul,li{
 }
 
 body{
+    width: 1200px;
+    height: fit-content;
+    margin: auto;
     background-color: var(--background-color);
-    color: var(--font-color);
-    font-family: var(--title-font);
-    font-size: 1rem;
-    font-weight: 400;
-    background-image: radial-gradient(circle, var(--gray-color) 0.063rem, rgba(0, 0, 0, 0) 0.063rem);
-    background-size: 1rem 1rem;
+    background-image: radial-gradient(circle, var(--gray-color) 0.060rem, rgba(0, 0, 0, 0) 0.060rem);
+    background-size: 0.7rem 0.7rem;
+}
 
-    
-    header{
-        border: 1px solid red;
+
+header{
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: 1.125rem;
+        height: 80px;
+        background-color: var(--background-color);
+        border: 1px solid var(--font-color);
+        border-radius: 60px;
+        margin: 2vh 9vh 2vh 9vh;
+}
 
-        nav{
-            border: 1px solid greenyellow;
-            font-size: 1.125rem;
-            flex: 1;
-            ul{
-                display: flex;
-                gap: 1.25rem;
-                justify-content: center;
-                cursor: pointer;
+nav{
+    font-family: var(--title-font);
+    flex: 1;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    .nome{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--pink-color);
+    }
+    .proj_cont {
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center;
+        cursor: pointer;
 
-                li{
-                    font-weight: 500;
-
-                    &:hover{
-                        color: var(--pink-color);
-                    }
-                }
+        li{
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: var(--font-color);
+            &:hover{
+                color: var(--pink-color);
             }
         }
     }
