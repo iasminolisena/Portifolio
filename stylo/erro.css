@@ -14,7 +14,7 @@
     --background-color: #FFFFFF;
     --title-font: "Quicksand",sans-serif;
     --details-font: "Parisienne", cursive;
-    --text-font: "Outfit", sans-serif;
+    --text-font: "Mulish", sans-serif;
 }
 
 ul,li{
@@ -73,43 +73,3 @@ nav{
         }
     }
 }
-.sobre_div{
-    display: flex;
-    justify-content: space-between;
-}
-.sobre{
-    margin: 9vh 0vh 9vh 9vh;
-}
-h1{
-    
-    font-family: var(--title-font);
-    font-weight: 700;
-    font-size: 3.25rem;
-    color: var(--font-color);
-}
-.sobre_text{
-    width: 526px;
-    font-family: var(--text-font);
-    font-weight: 300;
-    font-size: 1.25rem;
-    color: var(--font-color);
-}
-.quadrado_sobre{
-    width: 415px;
-    height: 500px;
-    background-color: var(--light-pink-color);
-    border-radius: 16px;
-    rotate: 4deg;
-    margin: 4vh 15vh 0vh 0vh;
-
-    &:hover{
-        rotate: 0deg;
-        transform: scale(1.1);
-        transition: transform 0.25s ease;
-    }
-}
-/* .quadrado_sobre img{
-    width: auto;
-    height: auto;
-    border-radius: 16px;
-} */
